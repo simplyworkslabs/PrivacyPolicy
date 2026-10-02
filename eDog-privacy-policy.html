@@ -1,161 +1,395 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - eDog</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            color: #333;
-        }
-        h1, h2 {
-            color: #222;
-        }
-        .date {
-            color: #666;
-            font-size: 0.9em;
-        }
-        footer {
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #666;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>eDog Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #f5f7fa;
+      --surface: #ffffff;
+      --text: #18212b;
+      --muted: #536171;
+      --accent: #155e75;
+      --border: #d8e0e8;
+      --notice: #e8f4f8;
+      --shadow: 0 10px 30px rgba(24, 33, 43, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 32px auto;
+      padding: clamp(24px, 5vw, 56px);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.25;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 6vw, 3rem);
+    }
+
+    h2 {
+      margin: 2.25rem 0 0.75rem;
+      padding-bottom: 0.35rem;
+      border-bottom: 1px solid var(--border);
+      font-size: 1.45rem;
+    }
+
+    h3 {
+      margin: 1.5rem 0 0.35rem;
+      font-size: 1.1rem;
+    }
+
+    p,
+    ul {
+      margin: 0.7rem 0;
+    }
+
+    ul {
+      padding-left: 1.4rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 0.18em;
+    }
+
+    .meta {
+      color: var(--muted);
+    }
+
+    .summary {
+      margin: 1.5rem 0;
+      padding: 1rem 1.1rem;
+      background: var(--notice);
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin: 1rem 0;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 680px;
+    }
+
+    th,
+    td {
+      padding: 0.8rem;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: color-mix(in srgb, var(--surface) 86%, var(--accent));
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    code {
+      overflow-wrap: anywhere;
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+      font-size: 0.9em;
+    }
+
+    address {
+      font-style: normal;
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        width: 100%;
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #0f141a;
+        --surface: #171e26;
+        --text: #edf3f8;
+        --muted: #adbac7;
+        --accent: #67d1eb;
+        --border: #35414d;
+        --notice: #15303a;
+        --shadow: none;
+      }
+    }
+  </style>
 </head>
-
 <body>
+  <main>
+    <header>
+      <h1>eDog Privacy Policy</h1>
+      <p class="meta"><strong>Effective date:</strong> October 1, 2026<br>
+        <strong>Last updated:</strong> October 1, 2026</p>
+    </header>
 
-<h1>Privacy Policy</h1>
+    <section class="summary" aria-label="Privacy summary">
+      <strong>Privacy summary:</strong> eDog processes camera images and microphone audio on your
+      Android device to detect motion and create recordings. SimplyWorks Labs does not operate a
+      server that receives your recordings, camera feed, audio, or app settings. Google Play
+      processes information needed for the optional Pro purchase.
+    </section>
 
-<p class="date"><strong>Effective Date:</strong> September 18, 2026</p>
+    <section>
+      <h2>1. Scope and developer</h2>
+      <p>This Privacy Policy explains how the eDog Android application, package
+        <code>com.simplyworkslabs.edog</code>, handles information. eDog is developed by
+        SimplyWorks Labs.</p>
+      <p>Questions or privacy requests may be sent to
+        <a href="mailto:simplyworkslabs@gmail.com">simplyworkslabs@gmail.com</a>.</p>
+    </section>
 
-<h2>Introduction</h2>
+    <section>
+      <h2>2. Information eDog accesses or generates</h2>
 
-<p>
-This Privacy Policy explains how <strong>eDog</strong> ("the App")
-handles information when you use our application.
-</p>
+      <h3>Camera images and motion analysis</h3>
+      <p>When you start monitoring, eDog uses the rear camera to display a live preview and analyze
+        image brightness changes for motion. Camera frames used for motion analysis are processed
+        on the device. They are not uploaded to SimplyWorks Labs.</p>
 
-<p>
-We respect your privacy and are committed to protecting your personal information.
-</p>
+      <h3>Video and audio recordings</h3>
+      <p>When motion is detected, eDog creates an MP4 video recording. If microphone permission is
+        granted, the recording includes audio. A recording may contain faces, voices, private
+        surroundings, or other personal or sensitive information captured by the device. Original
+        recordings remain in eDog's app-specific storage unless you choose to export or share them.</p>
 
-<h2>Information We Collect</h2>
+      <h3>Settings and recording metadata</h3>
+      <p>eDog stores settings such as motion sensitivity, recording duration, automatic monitoring,
+        app pinning, Night Mode, alert sound, and zoom level on the device. It also reads local file
+        information needed to display recordings, including filenames, creation times, and file
+        sizes. SimplyWorks Labs does not receive this information.</p>
 
-<p>
-The App may request access to certain device features to provide its functionality.
-</p>
+      <h3>Purchase and entitlement information</h3>
+      <p>The optional Pro unlock is a one-time purchase handled by Google Play. eDog exchanges the
+        product identifier, product details, pricing, purchase state, and purchase token with Google
+        Play to start a purchase, confirm ownership, restore a purchase, and acknowledge a completed
+        transaction. eDog does not receive your full payment-card details. The current app stores
+        only a local Boolean indicating that a verified Pro entitlement exists; it does not persist
+        the raw purchase token.</p>
 
-<h3>Camera Access</h3>
+      <h3>Information eDog does not access</h3>
+      <p>eDog does not request location permission and does not use location APIs. The app contains
+        no advertising SDK, analytics service, developer-operated account or login system, contact
+        access, health-data access, advertising-ID access, or code that uploads recordings to a
+        SimplyWorks Labs server.</p>
 
-<p>
-The App uses camera access to provide camera-related features.
-Camera data is processed only for the intended purpose of the App.
-Camera images or video are not collected, stored, or shared unless explicitly
-described within the App and approved by the user.
-</p>
+      <h3>Information you send by email</h3>
+      <p>If you contact SimplyWorks Labs by email, SimplyWorks Labs receives your email address and
+        the information you choose to include. That information is used to respond to your request
+        and may be retained as reasonably necessary to manage the correspondence or comply with law.</p>
+    </section>
 
-<h3>Microphone Access</h3>
+    <section>
+      <h2>3. Android permissions</h2>
+      <p>The release version of eDog declares the following permissions, including permissions added
+        by its production libraries:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Permission</th>
+              <th scope="col">Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>android.permission.CAMERA</code></td>
+              <td>Shows the rear-camera preview, analyzes frames for motion, and records video.</td>
+            </tr>
+            <tr>
+              <td><code>android.permission.RECORD_AUDIO</code></td>
+              <td>Adds microphone audio to motion-event video recordings.</td>
+            </tr>
+            <tr>
+              <td><code>android.permission.POST_NOTIFICATIONS</code></td>
+              <td>Displays the ongoing monitoring notification and its Stop action on supported Android versions.</td>
+            </tr>
+            <tr>
+              <td><code>android.permission.FOREGROUND_SERVICE</code></td>
+              <td>Runs a user-visible foreground service during active monitoring.</td>
+            </tr>
+            <tr>
+              <td><code>android.permission.FOREGROUND_SERVICE_CAMERA</code></td>
+              <td>Declares camera use by the foreground monitoring service.</td>
+            </tr>
+            <tr>
+              <td><code>android.permission.FOREGROUND_SERVICE_MICROPHONE</code></td>
+              <td>Declares microphone use by the foreground monitoring service.</td>
+            </tr>
+            <tr>
+              <td><code>android.permission.WAKE_LOCK</code></td>
+              <td>Helps active monitoring continue while the device is not being interacted with.</td>
+            </tr>
+            <tr>
+              <td><code>android.permission.WRITE_EXTERNAL_STORAGE</code></td>
+              <td>Exports a recording to public media storage on Android 9 and lower only; the permission is capped at API 28.</td>
+            </tr>
+            <tr>
+              <td><code>com.android.vending.BILLING</code></td>
+              <td>Connects to Google Play for the optional one-time Pro purchase and purchase restoration.</td>
+            </tr>
+            <tr>
+              <td><code>android.permission.INTERNET</code></td>
+              <td>Added by Google Play Billing and its dependencies for Google service communication.</td>
+            </tr>
+            <tr>
+              <td><code>android.permission.ACCESS_NETWORK_STATE</code></td>
+              <td>Added by Google Play Billing and its dependencies to determine network availability.</td>
+            </tr>
+            <tr>
+              <td><code>com.simplyworkslabs.edog.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code></td>
+              <td>An app-specific signature permission added by AndroidX to protect non-exported dynamic receivers; it is not a user-granted permission.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-<p>
-The App uses microphone access to provide audio-related features.
-Audio data is processed only for the intended purpose of the App.
-Audio recordings are not collected, stored, or shared unless explicitly
-described within the App and approved by the user.
-</p>
+    <section>
+      <h2>4. Storage, retention, export, sharing, and deletion</h2>
+      <ul>
+        <li><strong>Original recordings:</strong> retained in app-specific device storage until you
+          delete one or all recordings, clear eDog's app data, or uninstall the app, subject to
+          Android's storage behavior.</li>
+        <li><strong>Settings and local entitlement:</strong> retained in private app storage until
+          changed, app data is cleared, or the app is uninstalled. eDog disables Android cloud backup
+          and device-to-device transfer for its data.</li>
+        <li><strong>Exported recordings:</strong> exporting creates a separate copy in the device's
+          public <code>Movies/eDog</code> collection. Deleting the original inside eDog does not delete
+          that exported copy; delete it with the device's gallery or file-management tools.</li>
+        <li><strong>Shared recordings:</strong> sharing occurs only after you choose a destination app.
+          eDog grants that app temporary access to the selected file. The recipient app's handling,
+          retention, and further sharing are governed by its own privacy practices.</li>
+        <li><strong>Google Play records:</strong> purchase records are retained by Google according to
+          Google's policies and your Google account settings.</li>
+      </ul>
+    </section>
 
-<h3>Device Information</h3>
+    <section>
+      <h2>5. Third-party services</h2>
+      <h3>Google Play and Google Play Billing</h3>
+      <p>eDog uses Google Play Billing to offer and restore the one-time Pro unlock. Google may
+        process Google account information, purchase and payment information, app and device
+        information, network information, and service diagnostics as necessary to operate Google
+        Play. Google's handling of that information is governed by the
+        <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+      <p>eDog also uses AndroidX/Jetpack and Kotlin libraries for on-device application functions.
+        The app does not configure those libraries as analytics or advertising services. Google
+        states that the core Google Play services SDKs used transitively by Billing—base, basement,
+        and tasks—do not collect end-user data; see Google's
+        <a href="https://developers.google.com/android/guides/play-data-disclosure">Google Play services data disclosure</a>.
+        The exact internal diagnostics processed by Google Play Billing are controlled by Google and
+        are not visible in eDog's source code.</p>
+    </section>
 
-<p>
-The App may collect limited technical information, such as:
-</p>
+    <section>
+      <h2>6. Network communication and security</h2>
+      <p>No SimplyWorks Labs server endpoint is configured in eDog. Network communication in the
+        release app is used for Google Play Billing and related Google services. Android cleartext
+        network traffic is disabled. Google Play controls its own service endpoints and transport
+        security.</p>
+      <p>Recordings and preferences are not encrypted by a separate eDog encryption layer. They rely
+        on Android's app sandbox, platform access controls, and any storage encryption enabled by the
+        device. The FileProvider used for sharing is not publicly exported and grants access only
+        through explicit Android URI permissions. No security method can guarantee absolute
+        protection, so protect access to your device and share recordings carefully.</p>
+    </section>
 
-<ul>
-    <li>Device type</li>
-    <li>Operating system version</li>
-    <li>App version</li>
-    <li>Basic diagnostic information</li>
-</ul>
+    <section>
+      <h2>7. Your choices and privacy rights</h2>
+      <p>You control whether to grant camera, microphone, and notification permissions. You can stop
+        monitoring at any time, revoke permissions in Android settings, delete original recordings
+        individually or all at once, delete exported copies with system media tools, clear app data,
+        or uninstall eDog.</p>
+      <p>Depending on where you live, including under the GDPR/UK GDPR or the California Consumer
+        Privacy Act as amended by the CPRA, you may have rights to request access, correction,
+        deletion, restriction, portability, or information about the processing of personal data,
+        and to object to or withdraw consent from certain processing. eDog has no developer-operated
+        account or server database containing your recordings or settings, so most requests can be
+        completed directly using the on-device controls described above.</p>
+      <p>The app contains no mechanism that sells personal information or shares it for cross-context
+        behavioral advertising. To make a request concerning information sent directly to SimplyWorks
+        Labs, such as a support email, contact
+        <a href="mailto:simplyworkslabs@gmail.com">simplyworkslabs@gmail.com</a>. For information held
+        by Google Play, use your Google account controls or contact Google under its privacy policy.
+        You may also have the right to complain to your local data-protection authority.</p>
+    </section>
 
-<p>
-This information is used only to improve app performance, reliability, and user experience.
-</p>
+    <section>
+      <h2>8. Children's privacy</h2>
+      <p>eDog does not provide accounts, social features, advertising, or child-directed features.
+        SimplyWorks Labs does not knowingly receive children's personal information through an
+        eDog-operated server because the app has no such server. However, a user can record a scene
+        containing a child. The person operating eDog is responsible for using the camera and
+        microphone lawfully, obtaining any required consent, and protecting recordings. If a child
+        sends personal information directly to SimplyWorks Labs by email, a parent or guardian may
+        request its deletion using the contact address below.</p>
+    </section>
 
-<h2>How We Use Information</h2>
+    <section>
+      <h2>9. Changes to this policy</h2>
+      <p>This policy may be updated if eDog's functionality, legal obligations, or third-party
+        services change. The updated policy will show a revised “Last updated” date. Material changes
+        will be communicated through an appropriate channel, such as the app's Google Play listing or
+        an in-app notice when available and required.</p>
+    </section>
 
-<p>
-Information accessed through the App is used only to provide app functionality,
-improve user experience, and maintain app performance.
-</p>
+    <section>
+      <h2>10. Contact</h2>
+      <address>
+        <strong>SimplyWorks Labs</strong><br>
+        Email: <a href="mailto:simplyworkslabs@gmail.com">simplyworkslabs@gmail.com</a>
+      </address>
+    </section>
 
-<p>
-We do not sell, rent, or trade your personal information.
-</p>
-
-<h2>Data Storage and Security</h2>
-
-<p>
-The App does not store camera or microphone recordings unless clearly explained
-within the App and approved by the user.
-</p>
-
-<p>
-We take reasonable measures to protect information handled by the App.
-</p>
-
-<h2>Third-Party Services</h2>
-
-<p>
-The App may use third-party services that help provide functionality,
-analytics, or technical support. These services may process limited information
-according to their own privacy policies.
-</p>
-
-<h2>Children's Privacy</h2>
-
-<p>
-The App does not knowingly collect personal information from children under the
-age required by applicable laws. If you believe a child has provided personal
-information, please contact us.
-</p>
-
-<h2>Your Choices</h2>
-
-<p>
-You can control camera and microphone permissions through your device settings.
-You may disable these permissions at any time, although some App features may
-not function correctly.
-</p>
-
-<h2>Changes to This Privacy Policy</h2>
-
-<p>
-We may update this Privacy Policy from time to time. Any changes will be posted
-on this page with an updated effective date.
-</p>
-
-<h2>Contact Us</h2>
-
-<p>
-If you have questions about this Privacy Policy, please contact:
-</p>
-
-<p>
-<strong>Email:</strong> simplyworkslabs@gmail.com
-</p>
-
-<footer>
-<p>
-<strong>App Name:</strong> eDog
-</p>
-</footer>
-
+    <footer>
+      <p>Privacy Policy for eDog (<code>com.simplyworkslabs.edog</code>)</p>
+    </footer>
+  </main>
 </body>
 </html>
-
