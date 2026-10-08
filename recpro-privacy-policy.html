@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RecPro Privacy Policy — SimplyWorks Labs</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #f7f8fa;
+      --surface: #ffffff;
+      --text: #1b1b1f;
+      --muted: #555b66;
+      --accent: #315da8;
+      --border: #d9dde5;
+      --table-head: #eef2f8;
+      --shadow: 0 8px 28px rgba(25, 35, 50, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 1rem;
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(920px, calc(100% - 2rem));
+      margin: 2rem auto;
+      padding: clamp(1.25rem, 4vw, 3rem);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      box-shadow: var(--shadow);
+    }
+
+    h1, h2, h3 { line-height: 1.25; }
+    h1 { margin: 0 0 0.5rem; font-size: clamp(2rem, 6vw, 3rem); }
+    h2 { margin-top: 2.25rem; font-size: 1.45rem; }
+    h3 { margin-top: 1.5rem; font-size: 1.1rem; }
+    p, li { max-width: 75ch; }
+    .summary { font-size: 1.08rem; color: var(--muted); }
+    .dates { margin: 0.25rem 0 2rem; color: var(--muted); }
+    strong { font-weight: 650; }
+    a { color: var(--accent); text-underline-offset: 0.15em; }
+    a:hover { text-decoration-thickness: 0.14em; }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 640px;
+    }
+
+    th, td {
+      padding: 0.8rem 0.9rem;
+      text-align: left;
+      vertical-align: top;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th { background: var(--table-head); font-weight: 650; }
+    tr:last-child td { border-bottom: 0; }
+    code { font-size: 0.9em; overflow-wrap: anywhere; }
+
+    .note {
+      padding: 1rem;
+      border-inline-start: 0.3rem solid var(--accent);
+      background: var(--table-head);
+      border-radius: 0.35rem;
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+    }
+
+    @media (max-width: 600px) {
+      main {
+        width: 100%;
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #101216;
+        --surface: #171a20;
+        --text: #e7e9ee;
+        --muted: #b8bec9;
+        --accent: #a9c7ff;
+        --border: #343943;
+        --table-head: #222731;
+        --shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>RecPro Privacy Policy</h1>
+      <p class="summary">RecPro is an on-device audio recorder provided by SimplyWorks Labs. Its core recording, playback, protection, and storage-management features do not require a RecPro account or a SimplyWorks Labs server.</p>
+      <p class="dates"><strong>Effective:</strong> October 7, 2026<br><strong>Last updated:</strong> October 7, 2026</p>
+    </header>
+
+    <section aria-labelledby="scope">
+      <h2 id="scope">1. Scope and developer</h2>
+      <p>This policy explains how the RecPro Android application accesses, uses, stores, and discloses information. The developer and privacy contact is SimplyWorks Labs at <a href="mailto:simplyworkslabs@gmail.com">simplyworkslabs@gmail.com</a>.</p>
+    </section>
+
+    <section aria-labelledby="data">
+      <h2 id="data">2. Information RecPro accesses or creates</h2>
+
+      <h3>Audio recordings</h3>
+      <p>When you press Record and grant microphone permission, RecPro accesses microphone audio to create AAC audio recordings in an MPEG-4 container. Recording can continue in a visible Android microphone foreground service while the app is minimized or the screen is off. RecPro does not implement phone-call recording, hidden recording, scheduled recording, or recording that starts at device boot.</p>
+
+      <h3>Recording information</h3>
+      <p>RecPro creates and uses recording filenames, timestamps, file sizes, durations, segment numbers, protection status, and limited markers needed to recover or identify an interrupted recording. A filename may include the filename prefix you enter in Settings. The app also reads available device storage to enforce your storage limit and protect the device from critically low storage.</p>
+
+      <h3>Settings and recording allowance</h3>
+      <p>RecPro stores settings such as recording quality, audio channels, segment length, filename prefix, protection preference, screen-on preference, and storage limit. It also stores cumulative finalized-recording duration to enforce the free recording allowance. Deleting a recording does not reduce that cumulative allowance counter.</p>
+
+      <h3>Purchase information</h3>
+      <p>RecPro offers an optional one-time purchase for unlimited recording through Google Play Billing. The app receives product availability, localized price, purchase state, acknowledgement state, and ownership status from Google Play. A purchase token is handled transiently when RecPro asks Google Play to acknowledge a completed purchase; RecPro does not save the token in its local preferences or send it to a SimplyWorks Labs server. RecPro stores only a local cached ownership value so an established entitlement can remain usable during temporary billing-service interruptions.</p>
+
+      <p class="note"><strong>What RecPro does not access:</strong> the app does not request or use camera images, precise or approximate location, contacts, calendars, advertising identifiers, Android device identifiers, or RecPro account credentials.</p>
+    </section>
+
+    <section aria-labelledby="local-storage">
+      <h2 id="local-storage">3. Where information is stored</h2>
+      <ul>
+        <li><strong>Private recordings and metadata:</strong> stored in RecPro's app-specific internal storage, protected by Android's application sandbox.</li>
+        <li><strong>Settings:</strong> stored locally using Android DataStore.</li>
+        <li><strong>Allowance and entitlement cache:</strong> stored in private Android preferences.</li>
+        <li><strong>Music exports:</strong> when you explicitly choose an export action, RecPro copies finalized recordings to the device's user-accessible Music collection, normally under <code>Music/RecPro</code>. The private originals remain in RecPro.</li>
+      </ul>
+      <p>RecPro disables Android cloud backup and device-to-device transfer for its private app data. RecPro does not provide cloud recording storage or upload recordings to a SimplyWorks Labs server.</p>
+    </section>
+
+    <section aria-labelledby="sharing">
+      <h2 id="sharing">4. Sharing and disclosure</h2>
+      <p>RecPro does not sell personal information and does not share information for cross-context behavioral advertising.</p>
+      <p>Audio leaves RecPro's private storage only when you choose an action that does so:</p>
+      <ul>
+        <li><strong>Share:</strong> RecPro opens the Android Sharesheet and gives the application you select temporary read access to the selected recording. That recipient handles the recording under its own privacy practices.</li>
+        <li><strong>Export to Music:</strong> RecPro copies selected finalized recordings to Android's MediaStore Music collection. Other apps with appropriate access to that collection may then see those copies.</li>
+      </ul>
+      <p>RecPro does not automatically transmit recordings, filenames, protection metadata, or recording settings through Google Play Billing.</p>
+    </section>
+
+    <section aria-labelledby="permissions">
+      <h2 id="permissions">5. Android permissions</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Permission</th>
+              <th scope="col">Why RecPro declares it</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>RECORD_AUDIO</code></td>
+              <td>Captures microphone audio after you initiate recording and approve the runtime permission.</td>
+            </tr>
+            <tr>
+              <td><code>FOREGROUND_SERVICE</code></td>
+              <td>Runs the visible recording foreground service so recording can continue outside the foreground activity.</td>
+            </tr>
+            <tr>
+              <td><code>FOREGROUND_SERVICE_MICROPHONE</code></td>
+              <td>Declares that the foreground service uses the microphone on Android versions that require a specific service type and permission.</td>
+            </tr>
+            <tr>
+              <td><code>POST_NOTIFICATIONS</code></td>
+              <td>Shows the persistent active-recording notification and recording controls on Android versions that require notification permission.</td>
+            </tr>
+            <tr>
+              <td><code>WRITE_EXTERNAL_STORAGE</code> (Android 9/API 28 only)</td>
+              <td>Allows a user-requested copy of recordings to the public Music collection on the oldest supported Android version. Newer versions use scoped MediaStore access.</td>
+            </tr>
+            <tr>
+              <td><code>com.android.vending.BILLING</code></td>
+              <td>Supports the optional Google Play one-time purchase and ownership restoration.</td>
+            </tr>
+            <tr>
+              <td><code>INTERNET</code></td>
+              <td>Added by the Google Play Billing dependency for communication with Google Play and its supporting transport components. RecPro has no independent application server.</td>
+            </tr>
+            <tr>
+              <td><code>ACCESS_NETWORK_STATE</code></td>
+              <td>Added by the Google Play Billing dependency and its supporting transport components to determine network availability.</td>
+            </tr>
+            <tr>
+              <td><code>com.simplyworkslabs.recpro.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code></td>
+              <td>An AndroidX-generated, signature-protected internal permission used to prevent other apps from addressing non-exported dynamic receivers.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section aria-labelledby="third-parties">
+      <h2 id="third-parties">6. Third-party services</h2>
+      <h3>Google Play and Google Play Billing</h3>
+      <p>Google Play Billing is used only to display the one-time purchase offer, conduct the purchase flow, acknowledge completed purchases, and verify ownership. Google may process purchase and transaction information, app and device information, and service diagnostics necessary to provide, secure, and improve Google Play services. Payment credentials are entered into and processed by Google Play; RecPro does not receive credit-card or bank-account details.</p>
+      <p>The Google Play Billing dependency includes Google Play services and Google DataTransport components. RecPro does not configure an analytics service or create its own telemetry events, but the precise technical diagnostics processed internally by those Google components are controlled by Google rather than by RecPro's source code.</p>
+      <p>See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://play.google.com/about/play-terms/">Google Play Terms of Service</a>.</p>
+
+      <h3>Libraries that do not provide a data service</h3>
+      <p>RecPro uses Kotlin, Kotlin coroutines, and AndroidX libraries for its interface, navigation, lifecycle handling, local preferences, compatibility, and performance profiles. RecPro does not use those libraries to send user content to SimplyWorks Labs. The app contains no advertising, analytics, social-login, cloud-storage, or third-party crash-reporting SDK.</p>
+    </section>
+
+    <section aria-labelledby="retention">
+      <h2 id="retention">7. Retention and deletion</h2>
+      <ul>
+        <li>Private recordings remain until you delete them, storage rotation deletes an eligible finalized unprotected recording, you clear RecPro's app data, or you uninstall the app.</li>
+        <li>Protected recordings are excluded from automatic storage rotation. To delete one in RecPro, first remove its protection and then confirm deletion.</li>
+        <li>Settings, protection markers, cumulative allowance usage, and the local entitlement cache remain until they are changed, no longer needed by the app, app data is cleared, or the app is uninstalled.</li>
+        <li>Interrupted or unusable partial recordings may be removed during recorder cleanup. An interrupted file that can be preserved may remain marked for review until you delete it.</li>
+        <li>Copies exported to Music or shared with another app are outside RecPro's private storage. Deleting the original in RecPro does not delete those copies; delete them through the destination app or Android storage controls.</li>
+        <li>Google retains and deletes Google Play transaction information according to Google's own policies and legal obligations.</li>
+      </ul>
+      <p>RecPro deletion is permanent and does not provide a trash or undo archive.</p>
+    </section>
+
+    <section aria-labelledby="security">
+      <h2 id="security">8. Security</h2>
+      <p>RecPro uses Android's private app storage for recordings and preferences, keeps its recording service and file provider non-exported, grants temporary content access for user-initiated sharing, disables app-data backup and transfer, and disallows cleartext network traffic. Incomplete MediaStore export entries are removed when possible after a failed export.</p>
+      <p>RecPro does not add its own file-level encryption to recordings or preferences. Protection status prevents RecPro's automatic rotation and requires unprotection before in-app deletion; it is not cryptographic encryption or access control outside the app. Copies placed in Music or shared with another app are protected according to the device and recipient application's security settings. No security measure can guarantee absolute protection.</p>
+    </section>
+
+    <section aria-labelledby="rights">
+      <h2 id="rights">9. Your privacy rights</h2>
+      <p>Depending on your location, laws such as the GDPR, UK GDPR, or CCPA/CPRA may give you rights to know, access, correct, delete, restrict, or object to processing of personal information, and to receive a portable copy of certain information.</p>
+      <p>SimplyWorks Labs does not operate a RecPro account database or receive your private recordings. You can access, rename, protect, export, and delete recordings in the app, and can remove all private RecPro data by clearing app storage or uninstalling the app. For questions or a rights request concerning information held by SimplyWorks Labs, email <a href="mailto:simplyworkslabs@gmail.com">simplyworkslabs@gmail.com</a>. For Google Play transaction data, use the privacy controls or contact channels provided by Google.</p>
+      <p>RecPro does not sell personal information, share it for cross-context behavioral advertising, or use sensitive personal information to infer characteristics about you. You will not be discriminated against for exercising applicable privacy rights.</p>
+    </section>
+
+    <section aria-labelledby="children">
+      <h2 id="children">10. Children's privacy</h2>
+      <p>RecPro is a general-purpose audio utility and is not directed specifically to children under 13 or the minimum age required by local law. SimplyWorks Labs does not knowingly collect children's personal information through a RecPro server because RecPro has no such server or account system. If you believe a child has provided personal information directly to SimplyWorks Labs outside the app, contact <a href="mailto:simplyworkslabs@gmail.com">simplyworkslabs@gmail.com</a>.</p>
+    </section>
+
+    <section aria-labelledby="changes">
+      <h2 id="changes">11. Changes to this policy</h2>
+      <p>SimplyWorks Labs may update this policy when RecPro's features, legal requirements, or third-party services change. The revised policy will show a new “Last updated” date. Material changes will be communicated through an appropriate app or store-listing notice when required.</p>
+    </section>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">12. Contact</h2>
+      <p><strong>SimplyWorks Labs</strong><br>Email: <a href="mailto:simplyworkslabs@gmail.com">simplyworkslabs@gmail.com</a></p>
+    </section>
+
+    <footer>
+      <p>Privacy Policy for RecPro for Android.</p>
+    </footer>
+  </main>
+</body>
+</html>
