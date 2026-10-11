@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LullabyCam Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #fbf5ee;
+      --surface: #ffffff;
+      --text: #3d2f55;
+      --muted: #6b5e7e;
+      --accent: #485d92;
+      --border: #ded7e6;
+      --notice: #f2efff;
+      --shadow: rgba(61, 47, 85, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 1rem;
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 40px auto;
+      padding: clamp(24px, 5vw, 52px);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: 0 16px 40px var(--shadow);
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.25;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 6vw, 3rem);
+    }
+
+    h2 {
+      margin: 2.25rem 0 0.75rem;
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      margin: 1.5rem 0 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    p,
+    ul {
+      margin: 0.75rem 0;
+    }
+
+    ul {
+      padding-left: 1.4rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 0.15em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 3px;
+    }
+
+    .meta {
+      margin: 0 0 2rem;
+      color: var(--muted);
+    }
+
+    .summary {
+      padding: 18px 20px;
+      background: var(--notice);
+      border-left: 4px solid var(--accent);
+      border-radius: 12px;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin: 1rem 0;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    table {
+      width: 100%;
+      min-width: 620px;
+      border-collapse: collapse;
+      background: var(--surface);
+    }
+
+    th,
+    td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--notice);
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    code {
+      overflow-wrap: anywhere;
+      color: inherit;
+      font-size: 0.9em;
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+    }
+
+    @media (max-width: 600px) {
+      main {
+        width: 100%;
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #101526;
+        --surface: #18213c;
+        --text: #f5f1ff;
+        --muted: #d0c7df;
+        --accent: #dce2ff;
+        --border: #3a4463;
+        --notice: #242d4b;
+        --shadow: rgba(0, 0, 0, 0.35);
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>LullabyCam Privacy Policy</h1>
+      <p class="meta"><strong>Effective date:</strong> October 10, 2026<br>
+        <strong>Last updated:</strong> October 10, 2026</p>
+      <p class="summary">LullabyCam connects two Android devices on the same local Wi-Fi network for nursery monitoring. SimplyWorks Labs does not operate a cloud monitoring server and does not receive or store your live camera or microphone streams.</p>
+    </header>
+
+    <section aria-labelledby="scope">
+      <h2 id="scope">1. Scope</h2>
+      <p>This Privacy Policy explains how LullabyCam, provided by SimplyWorks Labs ("LullabyCam," "we," "us," or "our"), accesses, uses, transmits, stores, and protects information. LullabyCam lets one Android device act as a Nursery Device and another act as a Parent Device on the same local network.</p>
+      <p>LullabyCam does not require a SimplyWorks Labs account. The app does not include advertising, behavioral analytics, cloud recording, location tracking, or a developer-operated monitoring backend.</p>
+    </section>
+
+    <section aria-labelledby="data">
+      <h2 id="data">2. Information the app accesses or generates</h2>
+
+      <h3>Live camera and microphone data</h3>
+      <p>With permission, the Nursery Device captures live camera video and microphone audio so they can be transmitted to the connected Parent Device. The Parent Device accesses its microphone only for Hold to Talk or Two-Way Talk. LullabyCam does not provide a recording feature and does not save camera video or microphone audio to files or to a SimplyWorks Labs server. Live media is processed in memory for the active monitoring session and is delivered directly between the paired devices through WebRTC.</p>
+
+      <h3>Local-network and connection data</h3>
+      <p>The app uses Android network service discovery (NSD/mDNS) and local network sockets to find and connect devices. A Nursery Device advertises a service name, an app-generated random device identifier, and a local port. During a connection, the devices exchange local IP addresses, device names and identifiers, session and message identifiers, authentication material, WebRTC signaling data, connection status, battery and charging status, camera capabilities and state, talkback commands, and lullaby commands and state. This information is used only to discover, authenticate, connect, control, and maintain the monitoring session.</p>
+
+      <h3>Settings, trust records, and usage information</h3>
+      <p>The app stores the selected role, Keep Screen On preference, cumulative free-monitoring usage, cached purchase-entitlement status, last selected Nursery Device identifier, and trusted-device records in app-private Android DataStore storage. Trusted-device records include an app-generated device identifier, display name, pairing and last-authentication times, and a shared authentication secret protected with an Android Keystore AES-GCM key.</p>
+
+      <h3>Purchase information</h3>
+      <p>If you view, buy, or restore Unlimited Monitoring, the app communicates with Google Play Billing. Google Play handles the Google Account, payment method, billing, and transaction. LullabyCam receives product details, localized price, purchase state, product identifier, and a purchase token needed to acknowledge and restore the purchase. The token is sent back to Google Play for acknowledgement; it is not sent to a SimplyWorks Labs server. The app stores only a local Boolean cache indicating whether the purchase is owned.</p>
+
+      <h3>Information the app does not access</h3>
+      <p>LullabyCam does not request or use location, contacts, calendars, SMS, call logs, health data, advertising identifiers, photos, shared media storage, or files outside its private app storage. It does not include an ad SDK, analytics SDK, Firebase Analytics, or Crashlytics.</p>
+    </section>
+
+    <section aria-labelledby="network">
+      <h2 id="network">3. Where information goes</h2>
+      <ul>
+        <li><strong>Paired local device:</strong> live media and monitoring data are sent to the paired Nursery or Parent Device on the same local network.</li>
+        <li><strong>Local network discovery:</strong> the Nursery service name, app-generated device identifier, and port are advertised to devices on the local network through NSD/mDNS.</li>
+        <li><strong>Google Play:</strong> product, purchase, acknowledgement, and restore requests are sent to Google Play when billing features are used or purchase ownership is refreshed.</li>
+      </ul>
+      <p>No public STUN or TURN server is configured, and the app does not configure a SimplyWorks Labs API endpoint. Normal monitoring therefore uses local peer addresses and does not relay live media through a SimplyWorks Labs or third-party cloud server.</p>
+    </section>
+
+    <section aria-labelledby="security">
+      <h2 id="security">4. Security</h2>
+      <p>Returning devices authenticate with cryptographic challenge-response. Protocol messages are authenticated and checked for current sessions, duplicates, size limits, and supported protocol versions. Stored pairing secrets are encrypted with a key held in Android Keystore. App backup and device transfer are disabled so these local records are not copied through Android backup.</p>
+      <p>WebRTC provides the transport for live audio and video. Signaling and commands use a local <code>ws://</code> WebSocket connection. Those signaling messages are authenticated but are not encrypted with TLS, so another party able to observe the same local network may be able to see connection metadata, local addresses, commands, and device status. First pairing uses a trust-on-first-use model without a user-verified code, so use LullabyCam only on a trusted home network.</p>
+      <p>No security measure can guarantee absolute protection. Router configuration, operating-system behavior, other users of the network, and the security of each device also affect privacy.</p>
+    </section>
+
+    <section aria-labelledby="permissions">
+      <h2 id="permissions">5. Android permissions</h2>
+      <div class="table-wrap" role="region" aria-label="Android permissions" tabindex="0">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Permission</th>
+              <th scope="col">Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>CAMERA</code></td><td>Captures live Nursery video.</td></tr>
+            <tr><td><code>RECORD_AUDIO</code></td><td>Captures Nursery monitoring audio and Parent talkback audio.</td></tr>
+            <tr><td><code>MODIFY_AUDIO_SETTINGS</code></td><td>Configures and restores communication audio mode, routing, speaker behavior, and echo-control-compatible audio handling.</td></tr>
+            <tr><td><code>INTERNET</code></td><td>Opens local WebSocket and WebRTC connections and communicates with Google Play Billing.</td></tr>
+            <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Observes network availability and changes for discovery and reconnection.</td></tr>
+            <tr><td><code>ACCESS_WIFI_STATE</code></td><td>Checks Wi-Fi state used for local discovery and monitoring.</td></tr>
+            <tr><td><code>CHANGE_WIFI_STATE</code></td><td>Supports the Wi-Fi lock behavior used while Nursery monitoring is active; the app does not change the selected Wi-Fi network.</td></tr>
+            <tr><td><code>CHANGE_WIFI_MULTICAST_STATE</code></td><td>Acquires a multicast lock for NSD/mDNS discovery and advertising.</td></tr>
+            <tr><td><code>WAKE_LOCK</code></td><td>Holds the Wi-Fi performance lock needed to improve screen-off Nursery reachability. It does not keep the display on.</td></tr>
+            <tr><td><code>FOREGROUND_SERVICE</code></td><td>Runs user-started monitoring in visible foreground services.</td></tr>
+            <tr><td><code>FOREGROUND_SERVICE_CAMERA</code></td><td>Declares camera use by the Nursery foreground service.</td></tr>
+            <tr><td><code>FOREGROUND_SERVICE_CONNECTED_DEVICE</code></td><td>Declares local connected-device communication by the monitoring services.</td></tr>
+            <tr><td><code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code></td><td>Declares Nursery lullaby playback during monitoring.</td></tr>
+            <tr><td><code>FOREGROUND_SERVICE_MICROPHONE</code></td><td>Declares microphone use for Nursery audio and Parent talkback.</td></tr>
+            <tr><td><code>POST_NOTIFICATIONS</code></td><td>Shows ongoing monitoring notifications and their Stop action on supported Android versions.</td></tr>
+            <tr><td><code>com.android.vending.BILLING</code></td><td>Provided by Google Play Billing for the one-time Unlimited Monitoring purchase and purchase restoration.</td></tr>
+            <tr><td><code>com.simplyworkslabs.lullabycam.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code></td><td>A signature-level AndroidX permission that protects internal, non-exported dynamic receiver behavior; it does not grant access to user data.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section aria-labelledby="third-parties">
+      <h2 id="third-parties">6. Third-party services and libraries</h2>
+      <h3>Google Play Billing and Google Payments</h3>
+      <p>Google Play processes product queries, purchases, purchase status, acknowledgement, and restoration. Google may process Google Account, device, payment, and transaction information under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and the <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&amp;ldt=privacynotice">Google Payments Privacy Notice</a>. The release includes Google Play Services and Google Data Transport components transitively through its dependencies; LullabyCam does not configure analytics or crash reporting or submit its own analytics events.</p>
+
+      <h3>Functional libraries without configured vendor services</h3>
+      <p>LullabyCam uses AndroidX and Jetpack Compose for its interface and lifecycle, DataStore for local preferences, Hilt for dependency injection, Kotlin coroutines and serialization, Media3 for playback of bundled lullabies, Java-WebSocket for local signaling, and an Android WebRTC library for direct media transport. Based on the app configuration, Java-WebSocket, Media3, and WebRTC connect only as directed by LullabyCam; no external WebRTC ICE server, media host, analytics endpoint, or vendor account is configured.</p>
+    </section>
+
+    <section aria-labelledby="retention">
+      <h2 id="retention">7. Retention and deletion</h2>
+      <ul>
+        <li>Live camera and microphone data is not recorded by LullabyCam and is retained only in memory as needed for the active stream.</li>
+        <li>Connection and command data is retained only as needed for an active session, except for trusted-device records and the last selected Nursery Device identifier.</li>
+        <li>Preferences, trusted-device records, cumulative free-monitoring usage, and cached purchase ownership remain in private app storage until changed, revoked where the app provides that control, cleared through Android settings, or removed by uninstalling the app.</li>
+        <li>You can revoke the currently trusted device from Nursery Details. You can stop live processing with Stop &amp; Exit or the monitoring notification's Stop action.</li>
+        <li>To delete all LullabyCam data stored on a device, use Android Settings &gt; Apps &gt; LullabyCam &gt; Storage &gt; Clear storage, or uninstall LullabyCam. Because app backup and device transfer are disabled, the app does not restore these local records through Android backup.</li>
+        <li>Google Play purchase records are maintained by Google under Google's retention practices and may remain associated with the purchasing Google Account so the purchase can be restored.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="rights">
+      <h2 id="rights">8. Your privacy rights</h2>
+      <p>Depending on where you live, including the European Economic Area, United Kingdom, or California, you may have rights to know about, access, correct, delete, restrict, or object to certain processing of personal information, and to receive information in a portable form. You may also have the right to appeal or complain to a data-protection authority.</p>
+      <p>SimplyWorks Labs does not sell personal information, share it for cross-context behavioral advertising, or use it for targeted advertising. Because LullabyCam has no developer account system or cloud data store, SimplyWorks Labs generally does not possess the live media or local app records needed to fulfill an access or deletion request. Use the controls described above to manage device-local data. Manage Google purchase and payment information through your Google Account and Google Payments controls.</p>
+      <p>For privacy questions or requests concerning information that SimplyWorks Labs may hold, contact <a href="mailto:simplyworkslabs@gmail.com">simplyworkslabs@gmail.com</a>. We may need enough information to understand and lawfully respond to the request, but we will not ask for camera recordings, pairing secrets, or purchase tokens.</p>
+    </section>
+
+    <section aria-labelledby="children">
+      <h2 id="children">9. Children's privacy</h2>
+      <p>LullabyCam is a tool for parents and caregivers and is not designed for children to operate. Monitoring may necessarily transmit a child's image and voice from the Nursery Device to the Parent Device selected by the user. LullabyCam does not create child profiles, show advertising, or send that media to SimplyWorks Labs.</p>
+      <p>Parents and caregivers are responsible for using the app lawfully, placing devices appropriately, protecting access to both devices and the local network, and obtaining any consent required for other people who may be recorded or heard. If you believe information about a child has been provided directly to SimplyWorks Labs, contact us at the address below.</p>
+    </section>
+
+    <section aria-labelledby="changes">
+      <h2 id="changes">10. Changes to this policy</h2>
+      <p>We may update this Privacy Policy when the app's functionality, legal requirements, or third-party services change. The revised policy will show a new Last updated date. If a change materially affects how the app handles information, we will provide notice through an appropriate channel, such as the app's store listing or an in-app notice.</p>
+    </section>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">11. Contact</h2>
+      <p><strong>SimplyWorks Labs</strong><br>
+        Email: <a href="mailto:simplyworkslabs@gmail.com">simplyworkslabs@gmail.com</a></p>
+    </section>
+
+    <footer>
+      <p>LullabyCam package: <code>com.simplyworkslabs.lullabycam</code></p>
+    </footer>
+  </main>
+</body>
+</html>
