@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CalendarPro Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f6f7fb;
+      --surface: #ffffff;
+      --text: #1b1b1f;
+      --muted: #5f6368;
+      --border: #dfe2e8;
+      --accent: #315da8;
+      --accent-soft: #e8eefb;
+      --shadow: 0 12px 32px rgba(28, 39, 60, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 40px auto;
+      padding: clamp(24px, 5vw, 56px);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    h1, h2, h3 { line-height: 1.25; }
+    h1 { margin: 0 0 8px; font-size: clamp(2rem, 7vw, 3.25rem); }
+    h2 { margin-top: 2.2em; padding-top: 0.25em; font-size: 1.45rem; }
+    h3 { margin-top: 1.5em; font-size: 1.08rem; }
+    p, li { max-width: 78ch; }
+    ul { padding-left: 1.3rem; }
+    li + li { margin-top: 0.45rem; }
+
+    a { color: var(--accent); text-underline-offset: 0.15em; }
+    a:hover { text-decoration-thickness: 2px; }
+
+    .meta, .summary {
+      color: var(--muted);
+    }
+
+    .summary {
+      margin: 24px 0;
+      padding: 18px 20px;
+      background: var(--accent-soft);
+      border-left: 4px solid var(--accent);
+      border-radius: 10px;
+    }
+
+    .table-wrap { overflow-x: auto; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      font-size: 0.94rem;
+    }
+
+    th, td {
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th { background: var(--accent-soft); }
+    code { overflow-wrap: anywhere; }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+    }
+
+    @media (max-width: 600px) {
+      main {
+        width: 100%;
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101114;
+        --surface: #181a1f;
+        --text: #f0f1f4;
+        --muted: #b8bcc6;
+        --border: #353944;
+        --accent: #a9c7ff;
+        --accent-soft: #202b42;
+        --shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>CalendarPro Privacy Policy</h1>
+      <p class="meta"><strong>Effective:</strong> October 16, 2026<br>
+        <strong>Last updated:</strong> October 16, 2026</p>
+    </header>
+
+    <section aria-labelledby="overview">
+      <h2 id="overview">Overview</h2>
+      <p>CalendarPro is an Android calendar application developed by SimplyWorks Labs. This policy explains how CalendarPro handles information when you use device calendars, direct internet calendar (ICS) subscriptions, personal photo backgrounds, and the optional lifetime Premium purchase.</p>
+      <p class="summary">CalendarPro does not use a SimplyWorks Labs server to upload your calendars or personal photos. Most information remains on your device. Network communication is limited to Google Play Billing, HTTPS requests to calendar-feed addresses you choose, and external links that you choose to open.</p>
+    </section>
+
+    <section aria-labelledby="data">
+      <h2 id="data">Information CalendarPro accesses and why</h2>
+
+      <h3>Device calendar information</h3>
+      <p>If you grant calendar permission, CalendarPro accesses calendars and events made available through Android Calendar Provider. This can include calendar names and identifiers, the calendar account name, colors and access levels, and event titles, descriptions, locations, dates, times, time zones, recurrence rules, reminders, and all-day status. CalendarPro uses this information to display your calendar and, where the selected calendar permits it, to create, edit, or delete events.</p>
+      <p>CalendarPro does not upload this information to SimplyWorks Labs. Your Android calendar provider may independently synchronize calendar data with its own service according to the provider and account settings you chose.</p>
+
+      <h3>Direct ICS calendar subscriptions</h3>
+      <p>If you add an internet calendar, CalendarPro stores the full HTTPS feed address, which may contain a private query token, along with the downloaded iCalendar content, display name, color, visibility, cache validators, refresh times, and error status. CalendarPro contacts that address directly to validate and refresh the feed. The feed operator necessarily receives your network request, including your IP address and ordinary HTTP request information.</p>
+      <p>CalendarPro restricts subscriptions to HTTPS, rechecks redirects, rejects local and private-network destinations, and limits redirects, response size, and connection time. Feed content remains cached on your device so it can be displayed offline.</p>
+
+      <h3>Personal photos</h3>
+      <p>If you choose My Photos, Android's system photo picker lets you select up to 12 images. CalendarPro copies the selected images into its private app storage for reliable offline use and stores their order for month assignment. It does not request broad access to your photo library, modify the originals, or upload the selected images.</p>
+
+      <h3>Settings and locally generated identifiers</h3>
+      <p>CalendarPro stores preferences such as theme, time display, calendar visibility, default calendar, artwork choice, selected photo order, layout settings, and Keep Screen Awake preference. It also creates local identifiers for ICS subscriptions and stores Android calendar identifiers needed to apply your choices. CalendarPro does not deliberately access an advertising ID or Android device identifier.</p>
+
+      <h3>Premium purchase information</h3>
+      <p>The lifetime Premium purchase is processed by Google Play. CalendarPro requests product details and receives purchase state, product identifier, purchase token, and acknowledgment information from Google Play. It stores only a limited local entitlement cache consisting of the confirmed product identifier and verification time. CalendarPro does not receive or store your payment-card details.</p>
+
+      <h3>Information you send to us</h3>
+      <p>If you email SimplyWorks Labs, we receive your email address and the information you choose to include. We use it to respond, troubleshoot, protect the service, and meet legal obligations. Please do not send calendar content or private feed links unless they are necessary for your request.</p>
+
+      <h3>Information CalendarPro does not access</h3>
+      <p>CalendarPro does not declare permissions for your camera, microphone, precise or approximate location, contacts, phone, SMS, or broad media/storage access. The app contains no advertising SDK, behavioral analytics SDK, or crash-reporting SDK.</p>
+    </section>
+
+    <section aria-labelledby="permissions">
+      <h2 id="permissions">Android permissions</h2>
+      <p>The installed release includes the following permissions. Only calendar read/write permissions prompt for user approval; the remaining permissions support network, billing, or Android background-work infrastructure.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th scope="col">Permission</th><th scope="col">Purpose</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>READ_CALENDAR</code></td><td>Reads calendars and events exposed through Android Calendar Provider so they can be displayed.</td></tr>
+            <tr><td><code>WRITE_CALENDAR</code></td><td>Creates, updates, and deletes events and reminders when you use editing features and the destination calendar allows changes.</td></tr>
+            <tr><td><code>INTERNET</code></td><td>Downloads user-added HTTPS ICS feeds and communicates with Google Play Billing.</td></tr>
+            <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Allows network-constrained ICS refresh work to run when connectivity is available.</td></tr>
+            <tr><td><code>com.android.vending.BILLING</code></td><td>Supports the optional Google Play lifetime Premium purchase and restoration.</td></tr>
+            <tr><td><code>WAKE_LOCK</code></td><td>Included by Android WorkManager so scheduled refresh work can finish reliably. CalendarPro's user-facing Keep Screen Awake option uses an activity window flag, not a wake lock.</td></tr>
+            <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>Included by WorkManager to reschedule eligible background ICS refresh work after restart.</td></tr>
+            <tr><td><code>FOREGROUND_SERVICE</code></td><td>Included by WorkManager's general foreground-work infrastructure. CalendarPro does not define a separate user-tracking foreground service.</td></tr>
+            <tr><td><code>DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code></td><td>An app-signature permission generated by AndroidX to prevent other apps from sending untrusted broadcasts to internal dynamic receivers.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section aria-labelledby="sharing">
+      <h2 id="sharing">When information leaves your device</h2>
+      <ul>
+        <li><strong>Google Play:</strong> Google processes purchase and related account, device, payment, and service-operational information when Billing is used. CalendarPro's Billing dependency includes Google Play services and Google Data Transport components, but CalendarPro does not configure an analytics service. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://play.google.com/about/play-terms/">Google Play Terms of Service</a>.</li>
+        <li><strong>Your calendar provider:</strong> CalendarPro reads and writes through Android Calendar Provider. A provider such as Google or Samsung may synchronize that data under your account settings. See, as applicable, the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> or <a href="https://www.samsung.com/us/account/privacy-policy/">Samsung Privacy Policy</a>. Other providers are governed by their own policies.</li>
+        <li><strong>Your chosen ICS feed operator:</strong> CalendarPro sends an HTTPS request only to the feed address you enter and any validated redirects. Because the operator is selected by you, no single privacy policy applies; review the policy of that feed's website or provider.</li>
+        <li><strong>External maps, browser, and educational sites:</strong> If you tap Explore Location or Learn More, CalendarPro opens the query or link in an app you choose. That app or website then handles the request under its own policy. CalendarPro does not send your current location.</li>
+      </ul>
+      <p>Based on the application code, SimplyWorks Labs does not sell personal information, use it for targeted advertising, or share it for cross-context behavioral advertising.</p>
+    </section>
+
+    <section aria-labelledby="storage">
+      <h2 id="storage">Storage, retention, and deletion</h2>
+      <ul>
+        <li><strong>Android calendar data</strong> remains in Android Calendar Provider and the connected calendar account. It remains until you or your provider changes or deletes it. CalendarPro does not maintain a separate server copy.</li>
+        <li><strong>ICS subscriptions and cached events</strong> remain in CalendarPro's private local database until you remove the subscription, clear app data, or uninstall the app. Removing a subscription deletes its local record and cache and cancels its scheduled work. Removal does not ask the remote feed operator to delete its server logs.</li>
+        <li><strong>Personal photo copies</strong> remain in CalendarPro's private file storage until you remove them, clear app data, or uninstall. Removing them from CalendarPro deletes only CalendarPro's copy, not the original image.</li>
+        <li><strong>Preferences and Premium cache</strong> remain until changed, app data is cleared, or the app is uninstalled. CalendarPro permits Android cloud backup and device transfer of its DataStore preferences. The ICS database and personal-photo copies are excluded from CalendarPro's backup rules. Android or your device vendor controls backup availability, retention, and deletion.</li>
+        <li><strong>Support email</strong> is retained only as reasonably necessary to respond, maintain support records, protect rights and security, or comply with legal obligations. You may request deletion, subject to applicable legal exceptions.</li>
+      </ul>
+      <p>You can also revoke Calendar permission in Android Settings at any time. Clearing CalendarPro's storage or uninstalling it removes its current local app data, subject to copies retained in Android backup. Data synchronized by a calendar provider, processed by Google Play, or logged by an ICS operator must be managed through that provider.</p>
+    </section>
+
+    <section aria-labelledby="security">
+      <h2 id="security">Security</h2>
+      <p>CalendarPro uses Android's app-private storage and permission model. ICS feeds must use HTTPS, and the app applies destination, redirect, timeout, and response-size safeguards. Google Play handles payment details through its own protected service. CalendarPro does not add application-level encryption to its local DataStore, Room database, or copied personal photos; those files rely on Android's app sandbox and any device encryption enabled by the operating system. No method of storage or transmission is completely secure.</p>
+    </section>
+
+    <section aria-labelledby="rights">
+      <h2 id="rights">Your privacy rights</h2>
+      <p>Depending on where you live, including in the European Economic Area, United Kingdom, or California, you may have rights to request access, correction, deletion, restriction, portability, or information about the handling of your personal information, and to object or withdraw consent where applicable. You may also have a right not to receive discriminatory treatment for exercising applicable rights.</p>
+      <p>Most CalendarPro information is controlled directly on your device. Use the controls described above first. For information held by Google Play, your calendar provider, an ICS operator, or another external service, contact that service. For information held by SimplyWorks Labs, including support correspondence, email <a href="mailto:simplyworkslabs@gmail.com">simplyworkslabs@gmail.com</a>. We may need enough information to verify and fulfill your request, and legal exceptions may apply.</p>
+    </section>
+
+    <section aria-labelledby="children">
+      <h2 id="children">Children's privacy</h2>
+      <p>CalendarPro is a general-purpose calendar and contains no child-directed account system, profiling, or advertising. SimplyWorks Labs does not knowingly collect children's personal information through an app-operated server because CalendarPro does not operate such a server. If a parent or guardian believes a child sent personal information to SimplyWorks Labs by email, contact us to request its deletion.</p>
+    </section>
+
+    <section aria-labelledby="changes">
+      <h2 id="changes">Changes to this policy</h2>
+      <p>We may update this policy when CalendarPro's features, dependencies, data practices, or legal requirements change. The revised policy will show a new “Last updated” date. Material changes will be communicated through an appropriate app, store-listing, or website notice when required.</p>
+    </section>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">Contact</h2>
+      <address>
+        SimplyWorks Labs<br>
+        Email: <a href="mailto:simplyworkslabs@gmail.com">simplyworkslabs@gmail.com</a>
+      </address>
+    </section>
+
+    <footer>
+      <p>CalendarPro privacy policy · Effective October 16, 2026</p>
+    </footer>
+  </main>
+</body>
+</html>
