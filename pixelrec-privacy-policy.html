@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="How PixelRec by SimplyWorks Labs handles screen recordings, screenshots, audio, purchases, and local data.">
+  <title>PixelRec Privacy Policy — SimplyWorks Labs</title>
+  <style>
+    :root { color-scheme: light dark; --bg: #faf9fd; --surface: #fff; --text: #23212a; --muted: #585361; --accent: #6542a6; --line: #ded9e8; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 1rem/1.7 system-ui, -apple-system, "Segoe UI", sans-serif; }
+    main { width: min(100% - 2rem, 54rem); margin: 2rem auto; padding: clamp(1rem, 4vw, 3rem); background: var(--surface); border-radius: 1rem; }
+    h1, h2, h3 { line-height: 1.25; }
+    h1 { margin-top: 0; font-size: clamp(1.8rem, 5vw, 2.6rem); }
+    h2 { margin-top: 2.25rem; font-size: 1.35rem; }
+    h3 { margin-top: 1.5rem; font-size: 1.1rem; }
+    p, li { overflow-wrap: anywhere; }
+    li + li { margin-top: .55rem; }
+    a { color: var(--accent); text-underline-offset: .18em; overflow-wrap: anywhere; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+    .meta, footer { color: var(--muted); }
+    .summary { border-inline-start: .25rem solid var(--accent); padding-inline-start: 1rem; }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0; table-layout: fixed; font-size: .93rem; }
+    caption { text-align: start; font-weight: 600; margin-bottom: .6rem; }
+    th, td { text-align: start; vertical-align: top; border-bottom: 1px solid var(--line); padding: .7rem .5rem; overflow-wrap: anywhere; }
+    th:first-child { width: 43%; }
+    code { font-size: .88em; overflow-wrap: anywhere; }
+    footer { border-top: 1px solid var(--line); margin-top: 2.5rem; padding-top: 1rem; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #151319; --surface: #201d25; --text: #eee9f4; --muted: #c2baca; --accent: #ceb0ff; --line: #49414f; }
+    }
+    @media (max-width: 36rem) {
+      main { margin: .75rem auto; width: calc(100% - 1rem); border-radius: .6rem; }
+      th, td { padding: .6rem .3rem; }
+    }
+    @media print { main { width: 100%; margin: 0; padding: 0; } body { background: white; color: black; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>PixelRec Privacy Policy</h1>
+    <p>SimplyWorks Labs</p>
+    <p class="meta">Effective date: <time datetime="2026-10-21">October 21, 2026</time><br>
+      Last updated: <time datetime="2026-10-21">October 21, 2026</time></p>
+    <p>This policy describes how the PixelRec Android app handles information when you record your screen, take screenshots, edit or manage media, share files, or use the optional lifetime Premium purchase.</p>
+    <p class="summary">PixelRec processes your recordings, screenshots, and edits on your device. It does not upload that media to a SimplyWorks Labs server. Google Play handles Premium purchases, and its Billing components can send purchase-related information and operational diagnostics to Google. Sharing and device backup can also move information outside your device, as explained below.</p>
+  </header>
+
+  <section aria-labelledby="data">
+    <h2 id="data">1. Information used by PixelRec</h2>
+    <h3>Screen recordings, screenshots, and audio</h3>
+    <p>With Android's screen-capture authorization, PixelRec captures the screen or app content you authorize. Recordings and screenshots can contain personal or sensitive information displayed by other apps, including messages, financial information, or information about other people. Please avoid recording information you do not intend to keep or share.</p>
+    <p>If you enable audio and grant the required permission, PixelRec can record supported device playback audio, microphone audio, or both, according to your settings and Android restrictions. Microphone recordings can include your voice and nearby sounds. You can select no audio. PixelRec does not access the camera, request location or contacts, or use an advertising identifier in its own app code.</p>
+    <p>PixelRec reads selected media and associated information, such as filenames, content URIs, creation dates, dimensions, duration, and file size, to display its galleries and provide playback, editing, sharing, renaming, and deletion. Editing creates new output files rather than replacing the source through the normal export workflow.</p>
+    <h3>Preferences, recovery information, and purchases</h3>
+    <p>PixelRec stores recording preferences on your device. It also uses operation identifiers, publication receipts, file hashes, and media metadata to associate temporary files with the correct operation, verify saved content, and recover recordings or screenshot saves that could not be confirmed. These identifiers identify local operations, not an advertising profile.</p>
+    <p>For Premium, the app receives Google Play purchase information, including the product, purchase state, purchase token, signed purchase data, and signature. It keeps signed purchase proof in private, no-backup storage so it can check entitlement and retain previously verified access when Google Play is temporarily unavailable. PixelRec does not receive your payment card number or require a separate PixelRec account.</p>
+    <h3>Operational information</h3>
+    <p>The app writes operational messages to Android's device logs, including recording configuration, timing, sample counts, audio levels expressed as numeric peaks, and errors. This is not an audio transcript or an app-operated remote crash-reporting service. Google Play Billing has separate networked diagnostics, described in section 4.</p>
+  </section>
+
+  <section aria-labelledby="permissions">
+    <h2 id="permissions">2. Android permissions and controls</h2>
+    <p>The app and its bundled libraries declare the following permissions. A declaration does not mean every permission is always exercised. Android separately controls runtime permissions and special access. Screen capture also requires Android's screen-sharing authorization; it is not a general storage or camera permission.</p>
+    <table>
+      <caption>Permissions in PixelRec's app and merged dependency manifest</caption>
+      <thead><tr><th scope="col">Permission</th><th scope="col">Purpose</th></tr></thead>
+      <tbody>
+        <tr><td><code>android.permission.FOREGROUND_SERVICE</code></td><td>Run user-initiated capture as a foreground service with ongoing status.</td></tr>
+        <tr><td><code>android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION</code></td><td>Operate authorized screen recording and screenshot capture.</td></tr>
+        <tr><td><code>android.permission.FOREGROUND_SERVICE_MICROPHONE</code></td><td>Support microphone-enabled recording in a foreground service.</td></tr>
+        <tr><td><code>android.permission.RECORD_AUDIO</code></td><td>Capture microphone or supported device playback audio when enabled and authorized.</td></tr>
+        <tr><td><code>android.permission.POST_NOTIFICATIONS</code></td><td>Show capture controls, recording status, saved-media notifications, and recovery notices.</td></tr>
+        <tr><td><code>android.permission.SYSTEM_ALERT_WINDOW</code></td><td>Display the optional floating recording timer with your special-access approval.</td></tr>
+        <tr><td><code>android.permission.WRITE_SETTINGS</code></td><td>Attempt to enable the optional Show touches indicator and restore its previous setting after recording.</td></tr>
+        <tr><td><code>com.android.vending.BILLING</code></td><td>Use Google Play for the optional lifetime Premium purchase, restoration, and acknowledgment.</td></tr>
+        <tr><td><code>android.permission.INTERNET</code></td><td>Included by Google's transport dependency to communicate operational data to Google. Google Play purchase services also require connectivity.</td></tr>
+        <tr><td><code>android.permission.ACCESS_NETWORK_STATE</code></td><td>Included by media and transport libraries to determine network availability or connection type.</td></tr>
+        <tr><td><code>android.permission.WAKE_LOCK</code></td><td>Included by the media library for supported wake-management behavior during media operations.</td></tr>
+        <tr><td><code>com.simplyworkslabs.pixelrec.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code></td><td>A signature-protected AndroidX permission used to restrict internal broadcast delivery; it does not grant access to personal information.</td></tr>
+      </tbody>
+    </table>
+    <p>You can revoke microphone, notification, overlay, or system-settings access through Android Settings. You can stop screen sharing through PixelRec's controls or Android's screen-sharing controls. Revoking access can prevent the corresponding feature from working.</p>
+  </section>
+
+  <section aria-labelledby="storage">
+    <h2 id="storage">3. Storage, retention, and deletion</h2>
+    <ul>
+      <li><strong>Saved media:</strong> Videos are saved through Android MediaStore under <code>Movies/PixelRec</code>, and screenshots under <code>Pictures/PixelRec</code>. Other apps with appropriate access can see these files. They remain until you delete them; uninstalling PixelRec does not necessarily remove shared media.</li>
+      <li><strong>Drafts and temporary files:</strong> Screenshot drafts, prepared sharing images, thumbnails, and video-export artifacts use private app storage or cache. PixelRec attempts operation-specific cleanup where implemented. Files handed to another app for sharing are not immediately deleted. There is no fixed automatic expiry for every temporary file, and Android may clear cache independently.</li>
+      <li><strong>Recovery copies:</strong> A private recording copy or screenshot PNG can be retained when saving is interrupted or publication remains unconfirmed. Successful verified publication normally allows removal of that private media copy. Screenshot publication receipts can remain afterward to reconcile retries without creating duplicate outputs. Failed cleanup can also leave retained artifacts.</li>
+      <li><strong>Settings and purchase proof:</strong> Preferences remain until changed or app data is removed. Cached signed purchase proof remains until reconciled or app data is removed. Removing local data does not cancel a Google Play purchase or delete Google's transaction records.</li>
+    </ul>
+    <p>Use Delete in Videos or Shots, or an appropriate Android gallery or file manager, to remove saved media. Use Discard to remove the current unsaved screenshot draft. Clearing PixelRec's cache can remove temporary files; clearing its storage or uninstalling removes private local app data, including retained recovery copies. Save or recover anything you want to keep before doing so. These actions do not erase copies already shared with others, cloud backups, or Google Play records.</p>
+    <p>Android backup is enabled for the app. Eligible app data, such as preferences, may be backed up or transferred according to your Android, device-manufacturer, and backup-account settings. Purchase-proof files and the private recording and screenshot publication recovery directories use Android's no-backup location; cache is also not intended for Android Auto Backup. Separately installed gallery or backup apps may back up saved media under their own settings and policies. PixelRec does not operate its own cloud-media backup service.</p>
+  </section>
+
+  <section aria-labelledby="services">
+    <h2 id="services">4. Third-party services and sharing</h2>
+    <h3>Google Play Billing and Google transport components</h3>
+    <p>PixelRec uses Google Play Billing for the one-time, non-consumable <code>pixelrec_premium_lifetime</code> purchase. Google processes the payment and manages purchase ownership through Google Play. The app queries products and owned purchases and sends purchase tokens to Google Play when acknowledging a verified purchase. No developer-operated purchase-verification server is implemented.</p>
+    <p>The bundled Billing Library also uses Google Data Transport to send Billing operational events and diagnostics to Google. Its code includes app/package and version information, Billing operation outcomes and timing, session information, and device/build details. Transport can attach Android version, device model, manufacturer, hardware/build information, language and country settings, time zone, network type, mobile-network operator code where available, and app version. Network requests necessarily expose the connecting IP address to the receiving service. This is separate from your screen recordings and screenshots; PixelRec does not supply those files to Billing.</p>
+    <p>Google's processing, retention, international transfers, and privacy controls are governed by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. That policy also applies to Google services you separately choose for Android backup. There is no PixelRec control that disables all embedded Billing diagnostics.</p>
+    <h3>Android and AndroidX libraries</h3>
+    <p>PixelRec uses AndroidX and Jetpack libraries, including Compose, lifecycle/navigation components, DataStore, and Media3, for its interface, local preferences, playback, and media editing. The app does not configure them to upload your media. It does not include an advertising SDK, a general-purpose analytics integration, or an automatic remote crash-reporting integration. Google support components bundled with Billing are covered by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>; their inclusion does not mean PixelRec uploads media to Firebase.</p>
+    <h3>Sharing you request</h3>
+    <p>When you choose Share, Android lets you select another app or recipient. PixelRec grants access to the selected file, including a temporary sharing image when needed. The receiving app may store, upload, or further share it according to its own privacy policy. PixelRec cannot recall copies after sharing. We do not sell your recordings or screenshots through PixelRec or use them for targeted advertising.</p>
+  </section>
+
+  <section aria-labelledby="security">
+    <h2 id="security">5. Security</h2>
+    <p>PixelRec uses Android's app sandbox, scoped MediaStore access, non-exported internal capture components, operation/session identity checks, and restricted file-sharing URI grants. Publication checks use file size and SHA-256 content hashes to confirm intended output; hashing is not encryption. Purchase checks use signed purchase data.</p>
+    <p>PixelRec does not add its own encryption to saved MP4 or PNG files, private drafts, or purchase-proof files. Device storage protection depends on Android and your device configuration. Google's transport component uses an HTTPS destination for Billing telemetry. No storage or transmission method can be guaranteed completely secure; protect your device and review captured content before sharing.</p>
+  </section>
+
+  <section aria-labelledby="rights">
+    <h2 id="rights">6. Your choices and privacy rights</h2>
+    <p>You control whether to start capture, enable audio, retain media, or share a file. PixelRec does not provide an account-registration or login system. Google Play account and purchase controls are separate from PixelRec.</p>
+    <p>Depending on your location and applicable law, including the GDPR and California privacy laws such as the CCPA/CPRA where they apply, you may have rights to request access, correction, deletion, or a copy of personal information, to object to or restrict certain processing, to withdraw consent where processing relies on it, and to complain to your local data-protection authority. Applicable California rights may include opting out of sale or sharing for cross-context behavioral advertising and freedom from unlawful discrimination for exercising privacy rights. These rights are subject to legal conditions and exceptions.</p>
+    <p>For media stored only on your device, use the local viewing, sharing, and deletion controls described above; SimplyWorks Labs cannot remotely retrieve or erase those files. Contact us about information you have provided directly to us or other privacy questions. Do not send recordings, screenshots, purchase tokens, or other sensitive information unless necessary for your request. If you email us, your email address and message are disclosed to the email services involved. For information held by Google or an app you chose to share with, use that provider's privacy controls or contact that provider.</p>
+  </section>
+
+  <section aria-labelledby="children">
+    <h2 id="children">7. Children's privacy</h2>
+    <p>PixelRec is a screen-capture utility. It does not include child-specific features, an age-verification system, or a child account system. Captured content and audio may nevertheless include information about children or other people if you choose to record it. Parents and guardians should supervise capture and sharing and avoid exposing children's personal information. If you believe a child's personal information has been provided directly to SimplyWorks Labs, contact us so we can address the concern.</p>
+  </section>
+
+  <section aria-labelledby="changes">
+    <h2 id="changes">8. Changes to this policy</h2>
+    <p>Changes to this policy will be published on this page with an updated last-updated date. Please review it when considering how you use PixelRec. Any additional notice or consent required by applicable law will be handled as required.</p>
+  </section>
+
+  <section aria-labelledby="contact">
+    <h2 id="contact">9. Contact</h2>
+    <p>For privacy questions or requests, contact SimplyWorks Labs at <a href="mailto:simplyworkslabs@gmail.com">simplyworkslabs@gmail.com</a>.</p>
+  </section>
+  <footer><p>PixelRec · SimplyWorks Labs</p></footer>
+</main>
+</body>
+</html>
