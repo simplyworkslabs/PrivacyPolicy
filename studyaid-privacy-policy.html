@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StudyAid Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --surface: #ffffff;
+      --text: #1b1b1f;
+      --muted: #5f6368;
+      --accent: #315da8;
+      --border: #d9dce1;
+      --note: #edf3ff;
+      --note-border: #aac5f6;
+      --shadow: 0 12px 36px rgba(20, 30, 50, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 1rem;
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(920px, calc(100% - 2rem));
+      margin: 2rem auto;
+      padding: clamp(1.25rem, 4vw, 3rem);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 1.25rem;
+      box-shadow: var(--shadow);
+    }
+
+    header { border-bottom: 1px solid var(--border); margin-bottom: 2rem; padding-bottom: 1.5rem; }
+    h1 { margin: 0 0 0.5rem; font-size: clamp(2rem, 6vw, 3rem); line-height: 1.15; }
+    h2 { margin: 2.25rem 0 0.75rem; font-size: clamp(1.3rem, 3vw, 1.65rem); line-height: 1.3; }
+    h3 { margin: 1.5rem 0 0.5rem; font-size: 1.08rem; }
+    p, ul { margin: 0.65rem 0 1rem; }
+    ul { padding-left: 1.35rem; }
+    li + li { margin-top: 0.35rem; }
+    a { color: var(--accent); text-underline-offset: 0.15em; }
+    a:hover { text-decoration-thickness: 0.14em; }
+    .meta, .muted { color: var(--muted); }
+    .summary {
+      margin: 1.25rem 0;
+      padding: 1rem 1.1rem;
+      background: var(--note);
+      border: 1px solid var(--note-border);
+      border-radius: 0.8rem;
+    }
+
+    .table-wrap { overflow-x: auto; margin: 1rem 0; }
+    table { width: 100%; border-collapse: collapse; min-width: 640px; }
+    th, td { padding: 0.75rem; border: 1px solid var(--border); text-align: left; vertical-align: top; }
+    th { background: color-mix(in srgb, var(--surface) 82%, var(--accent) 18%); }
+    code { overflow-wrap: anywhere; font-size: 0.9em; }
+    footer { margin-top: 2.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
+
+    @media (max-width: 600px) {
+      main { width: 100%; margin: 0; border: 0; border-radius: 0; box-shadow: none; }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101216;
+        --surface: #191c21;
+        --text: #eceef2;
+        --muted: #b5bac5;
+        --accent: #a9c7ff;
+        --border: #3b4049;
+        --note: #1b2b47;
+        --note-border: #456796;
+        --shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>StudyAid Privacy Policy</h1>
+      <p class="meta"><strong>Effective date:</strong> November 9, 2026<br>
+      <strong>Last updated:</strong> November 9, 2026</p>
+    </header>
+
+    <section aria-labelledby="overview">
+      <h2 id="overview">Overview</h2>
+      <p>This Privacy Policy explains how SimplyWorks Labs ("SimplyWorks Labs," "we," "us," or "our") handles information when you use StudyAid: MCQ Study &amp; Practice ("StudyAid") on Android.</p>
+      <div class="summary">
+        <strong>In brief:</strong> StudyAid is an offline-first app. Your questions, answer choices, explanations, categories, study status, captured or selected images, recognized text, preferences, and generated audio are processed and stored on your device or in files you choose to export. We do not operate a server that receives this study content. Google ML Kit may collect limited operational metrics, and Google Play processes information needed for an optional Premium purchase.
+      </div>
+    </section>
+
+    <section aria-labelledby="information">
+      <h2 id="information">Information handled by StudyAid</h2>
+
+      <h3>Study content</h3>
+      <p>StudyAid stores content that you enter, import, capture, or edit, including question text, answer choices, correct-answer selections, explanations, question numbers, categories, study statuses, raw OCR text, and creation or review timestamps. This information is used to provide the Library, search, filtering, editing, duplicate detection, listening, export, backup, and restore features.</p>
+
+      <h3>Images and recognized text</h3>
+      <p>If you choose to use the camera or Android Photo Picker, StudyAid processes the selected image, crop selection, image orientation, cropped image, and text recognized from the image. Temporary images are kept in app-private cache storage while you work. A cropped source image may be retained in app-private storage with a saved question so that you can review it later.</p>
+
+      <h3>Imported and exported files</h3>
+      <p>When you choose a TXT file or a StudyAid backup, the app reads the document you select through Android's document picker. When you export an MP3 or backup, StudyAid writes the result only to the destination you select. StudyAid does not upload these documents to a SimplyWorks Labs server.</p>
+
+      <h3>Speech and audio</h3>
+      <p>StudyAid prepares question text for Android Text-to-Speech and restricts its own voice selection to voices reported as installed and not requiring a network connection. Generated speech segments and MP3 working files are created in app-private temporary storage and removed after completion or failure. The completed MP3 remains at the location you selected until you delete it.</p>
+
+      <h3>Preferences and purchase entitlement</h3>
+      <p>StudyAid stores settings such as theme, speech rate, preferred voice identifier, playback options, and Listen filters on your device. For Premium, StudyAid receives product details and purchase state from Google Play, temporarily handles the purchase token to acknowledge a completed purchase, and stores a local last-verified ownership status and timestamp. StudyAid does not receive your payment card number or full Google account credentials.</p>
+
+      <h3>Information StudyAid does not request</h3>
+      <p>StudyAid does not request microphone access, location, contacts, calendar, call logs, SMS, broad photo or media library access, or an advertising identifier. It has no SimplyWorks Labs account, login, advertising, or first-party analytics system.</p>
+    </section>
+
+    <section aria-labelledby="storage">
+      <h2 id="storage">Where information is stored</h2>
+      <ul>
+        <li>Questions, choices, categories, statuses, OCR text, and related metadata are stored in a Room database in StudyAid's app-private storage.</li>
+        <li>Preferences and cached Premium ownership status are stored in Android DataStore or debug-only app preferences on your device.</li>
+        <li>Temporary capture, crop, OCR, speech, backup-staging, and audio-export files are stored in app-private cache directories.</li>
+        <li>Saved question images are stored in an app-private files directory.</li>
+        <li>TXT files, backup archives, and MP3 exports are read from or written to document locations that you explicitly choose through Android's Storage Access Framework.</li>
+      </ul>
+      <p>StudyAid disables Android automatic cloud backup. StudyAid does not add its own encryption layer to its Room database, app-private files, manual backup ZIP files, or MP3 exports. App-private data is protected by Android's application sandbox and any device encryption enabled by Android. Manual backups and exported audio should be stored and shared with care because another person or app with access to those exported files may be able to read them.</p>
+    </section>
+
+    <section aria-labelledby="services">
+      <h2 id="services">Third-party services and components</h2>
+
+      <h3>Google ML Kit Text Recognition</h3>
+      <p>StudyAid uses the bundled Latin-script ML Kit Text Recognition model. Image input and recognized text are processed on-device; Google states that ML Kit does not send API input data or resulting output to Google servers. ML Kit may send Google device information, app information, per-installation identifiers, and performance or utilization metrics for diagnostics, maintenance, improvement, and abuse prevention. Google states that these metrics are encrypted in transit and are not shared with third parties. See <a href="https://developers.google.com/ml-kit/terms">ML Kit Terms and Privacy</a>, <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit data disclosure guidance</a>, and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+      <h3>Google Play Billing</h3>
+      <p>StudyAid uses Google Play Billing for the optional one-time Premium purchase. Google Play processes the purchase transaction and associated Google account, payment, device, fraud-prevention, and purchase-history information under Google's terms and privacy practices. StudyAid receives only the information needed to show the product, start the purchase flow, determine purchase state, acknowledge a completed purchase, and restore ownership. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://play.google.com/about/play-terms/">Google Play Terms of Service</a>.</p>
+
+      <h3>Android Text-to-Speech engine</h3>
+      <p>Speech is produced by the Text-to-Speech engine installed and selected on your device. StudyAid supplies question text to that engine and selects voices reported as installed and offline. The engine is provided by your device manufacturer or another provider, not by SimplyWorks Labs. Its provider's privacy policy applies to its operation. You can review or change the engine in Android's Text-to-Speech settings. If you use a Google-provided engine, see the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+      <h3>Local open-source components</h3>
+      <p>StudyAid also uses AndroidX components such as CameraX, Room, DataStore, WorkManager, and Media3; Kotlin libraries; and the Jump3r MP3 encoder. In StudyAid, these components support local camera, database, preference, background-work, playback, and encoding functions. The codebase does not configure them to send your study content to SimplyWorks Labs.</p>
+    </section>
+
+    <section aria-labelledby="permissions">
+      <h2 id="permissions">Android permissions</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Permission</th><th>Why StudyAid declares it</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>android.permission.CAMERA</code></td><td>Optional in-app camera preview and photo capture. It is requested only when you choose the camera workflow.</td></tr>
+            <tr><td><code>android.permission.FOREGROUND_SERVICE</code></td><td>Supports user-visible long-running playback and audio-export work.</td></tr>
+            <tr><td><code>android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK</code></td><td>Allows continuous question audio playback with a Media3 media session and playback notification.</td></tr>
+            <tr><td><code>android.permission.FOREGROUND_SERVICE_DATA_SYNC</code></td><td>Allows user-initiated MP3 generation and saving to continue as foreground WorkManager work.</td></tr>
+            <tr><td><code>com.android.vending.BILLING</code></td><td>Added by Google Play Billing to offer and restore the optional one-time Premium purchase.</td></tr>
+            <tr><td><code>android.permission.WAKE_LOCK</code></td><td>Added by WorkManager and Media3 so active playback or export work can complete reliably while the device is not fully awake.</td></tr>
+            <tr><td><code>android.permission.ACCESS_NETWORK_STATE</code></td><td>Added by WorkManager, Media3, and Google support libraries to observe connectivity state. StudyAid does not use it to determine location.</td></tr>
+            <tr><td><code>android.permission.RECEIVE_BOOT_COMPLETED</code></td><td>Added by WorkManager so its scheduler can reconcile eligible background work after a device restart. StudyAid does not automatically resume listening after restart.</td></tr>
+            <tr><td><code>com.simplyworkslabs.studyaid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code></td><td>An app-specific signature permission generated by AndroidX to protect internal dynamic broadcast receivers. It is not a user-facing permission and is not granted to unrelated apps.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>StudyAid's release manifest does not declare the Android <code>INTERNET</code> permission or broad storage/media permissions. Google Play Billing communicates with the Google Play app and services through Google's supported billing integration.</p>
+    </section>
+
+    <section aria-labelledby="retention">
+      <h2 id="retention">Retention and deletion</h2>
+      <p>Saved questions, images, categories, and preferences remain on your device until you delete them, replace them through an authorized restore operation, clear StudyAid's storage in Android settings, or uninstall the app. StudyAid removes abandoned capture files and attempts to remove temporary export and staging files after completion, cancellation, or failure.</p>
+      <ul>
+        <li>You can delete individual questions in StudyAid. This also removes their answer choices and unreferenced app-private image attachment.</li>
+        <li>You can delete a category after confirmation. This deletes questions assigned to that category and their unreferenced app-private attachments.</li>
+        <li>You can edit question text, answers, explanations, categories, and statuses directly in the app.</li>
+        <li>You can remove all app-private information by clearing StudyAid's storage in Android settings or uninstalling StudyAid.</li>
+        <li>Backups, TXT source files, shared clipboard content, and MP3 files outside StudyAid's private storage are controlled by you and must be deleted from their destination separately.</li>
+      </ul>
+      <p>SimplyWorks Labs does not maintain a server-side copy of your study library and therefore cannot retrieve or delete that on-device content for you.</p>
+    </section>
+
+    <section aria-labelledby="rights">
+      <h2 id="rights">Your privacy rights</h2>
+      <p>Depending on where you live, you may have rights to access, correct, delete, restrict, or object to processing of personal data, obtain a portable copy, withdraw consent where processing is based on consent, or lodge a complaint with a data-protection authority. California residents may also have rights to know, correct, and delete covered personal information and to receive equal service when exercising their rights.</p>
+      <p>StudyAid does not sell personal information, share personal information for cross-context behavioral advertising, or use targeted advertising. Most StudyAid content is controlled directly on your device using the editing, deletion, backup, and export features described above. To ask a privacy question or exercise a right involving SimplyWorks Labs, email <a href="mailto:simplyworkslabs@gmail.com">simplyworkslabs@gmail.com</a>. We may need enough information to understand and respond to your request, but StudyAid has no account system with which to identify you.</p>
+      <p>Requests involving information processed independently by Google Play, Google ML Kit, or a device Text-to-Speech provider should also be directed to that provider under its privacy policy.</p>
+    </section>
+
+    <section aria-labelledby="security">
+      <h2 id="security">Security</h2>
+      <p>StudyAid uses Android app-private storage, scoped document access, validation for imported backups and TXT files, bounded temporary storage, and cleanup of question-owned attachments. Automatic Android cloud backup is disabled. No method of storage is completely secure, and StudyAid does not provide additional at-rest encryption for its database or user-created export files. You are responsible for securing your device and any backup or MP3 files you export or share.</p>
+    </section>
+
+    <section aria-labelledby="children">
+      <h2 id="children">Children's privacy</h2>
+      <p>StudyAid is a general-purpose study tool and is not specifically designed or directed to children under 13. It does not provide social features, advertising, or a SimplyWorks Labs account system. We do not knowingly operate a server that collects personal information from children through StudyAid. A parent or guardian with a concern may contact us at <a href="mailto:simplyworkslabs@gmail.com">simplyworkslabs@gmail.com</a>.</p>
+    </section>
+
+    <section aria-labelledby="changes">
+      <h2 id="changes">Changes to this policy</h2>
+      <p>We may update this Privacy Policy when StudyAid's features, third-party services, or legal obligations change. We will update the "Last updated" date and make the revised policy available at the same public location. Material changes may also be communicated through the app or its store listing when appropriate.</p>
+    </section>
+
+    <footer>
+      <h2>Contact</h2>
+      <p><strong>SimplyWorks Labs</strong><br>
+      Email: <a href="mailto:simplyworkslabs@gmail.com">simplyworkslabs@gmail.com</a></p>
+    </footer>
+  </main>
+</body>
+</html>
